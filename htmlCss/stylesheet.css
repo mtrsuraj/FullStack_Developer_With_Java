@@ -1,0 +1,49 @@
+.box-color{
+    border: 2px solid skyblue;
+    /* size: "75"; */
+    height: 40px;
+    
+}
+.name-box-color{
+    height: 40px;
+    border: 2px solid skyblue;
+
+}
+.button{
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.reset{
+    cursor: pointer;
+    background-color: black;
+    color: rgb(202, 66, 31);
+    border-radius: 10px;
+}
+.reset:hover{
+    background-color: red;
+    color: rgb(240, 227, 227);
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+}
+table{
+    background-color: rgba(237, 230, 240, 0.205); 
+    /* border-collapse: collapse;  */
+    border:  solid rgba(113, 222, 241, 0.616)
+  }
+
+/* .signin 
+{
+position:absolute;
+min-width:22%;
+height 20%;
+top:0%;
+right:0%;
+z-index:10;
+background-color:#CCC;
+border: 10px solid rgb(179, 40, 40);
+
+} */

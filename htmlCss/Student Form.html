@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="styleStudentsheet.css">
+</head>
+<body>
+    <fieldset class="back">
+        <form action="">
+            <h1 style="text-align: center;">Student Form</h1>
+            <p>Student Name* &nbsp &nbsp  <input type="text" name="fname" placeholder="Type Your Name"></p>
+            <p>Registration No. * <input type="number" name="number" placeholder="R-Number" required></p>
+            <p>Roll No. * &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp<input type="number" name="roll-number" placeholder="Your Roll Is?"></p>
+            <p>Password * &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp<input type="password" name="password" id="password" placeholder="password" required></p>
+            <fieldset>
+                <legend>Gender *</legend>
+                <p>Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> ohers <input type="radio" name="gender"></p>
+            </fieldset>
+            <p>Which Batch From You are? *
+            <select name="batch-number" id="batch">
+                <!-- <p>Which Batch you are?</p> -->
+                <option value="#">Select Batch</option>
+                <option value="ibh-1">IBH-7</option>
+                <option value="ibh-6">IBH-6</option>
+                <option value="ibh-5">IBH-5</option>
+                <option value="ibh-4">IBH-4</option>
+                <option value="tgl-group">TGL-GROUP</option>
+            </select>
+            </p>
+            <p>Phone No. * &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<input type="number" name="phone number" placeholder="Must be 10 Digit"></p>
+            <p>E-mail * &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp<input type="text" name="email" placeholder="E-main" required></p>
+            <p>Your Stream
+                <select name="stream" id="stream">
+                    <option value="#">Select Your Stream</option>
+                    <option value="software">Software Engineer</option>
+                    <option value="testing">Testing</option>
+                    <option value="sde-1">SDE-1</option>
+                    <option value="sde-2">SDE-2</option>
+                    <option value="sde-3">SDE-3</option>
+                    <option value="fullstack">Full-Stack</option>
+                </select>
+            </p>
+            <p>Graduated in * <input type="date" name="date"></p>
+            <p>Date * <input type="date" name="date"></p>
+
+            <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<button class="reset">Resent</button>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <button class="submit">Submit</button></p>
+
+        </form>
+    </fieldset>
+</body>
+</html>

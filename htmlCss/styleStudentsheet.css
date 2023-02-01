@@ -1,0 +1,18 @@
+.back{
+    background-color: rgba(211, 184, 237, 0.435);
+}
+.reset:hover{
+    background-color: red;
+    cursor: pointer;
+    border-radius: 1em;
+
+}
+.submit:hover{
+
+    background-color: green;
+    cursor: pointer;
+    border-radius: 1em;
+}
+.back{
+    text-align: left;
+}

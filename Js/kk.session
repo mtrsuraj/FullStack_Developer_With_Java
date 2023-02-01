@@ -1,0 +1,101 @@
+[12:55] Krishna Kumar
+    1. Create an Object called
+Trainer - Name, Location, Age, IsAvailable (true/false), Salary
+
+2. Create an Object called Customer
+ID, Name, Registered Date, Type (Regular or Registered), Active : true/ false
+3. Create Order Object
+Id, Order Date, Order Total
+4. Customer should have order object
+5. Create Item Object
+Id, Name, Description, Rate
+6. Order should have array of Items
+7. Company should have aray of customers
+Display via console.log
+1. Trainer information
+2. Customer information
+3. Order and Items information
+
+
+
+
+
+
+
+See Answer
+'use strict';
+
+const fs = require('fs');
+
+process.stdin.resume();
+
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+
+let currentLine = 0;
+
+process.stdin.on('data', function(inputStdin) {
+
+inputString += inputStdin;
+
+});
+
+process.stdin.on('end', function() {
+
+inputString = inputString.split('\n');
+
+main();
+
+});
+
+function readLine() {
+
+return inputString[currentLine++];
+
+}
+
+
+
+/*
+
+* Complete the 'directionReduction' function below.
+
+*
+
+* The function is expected to return a STRING_ARRAY.
+
+* The function accepts STRING_ARRAY directions as parameter.
+
+*/
+
+function directionReduction(directions) {
+
+}
+
+function main() {
+
+const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+const directionsCount = parseInt(readLine().trim(), 10);
+
+let directions = [];
+
+for (let i = 0; i < directionsCount; i++) {
+
+const directionsItem = readLine();
+
+directions.push(directionsItem);
+
+}
+
+const result = directionReduction(directions);
+
+ws.write(result.join('\n') + '\n');
+
+ws.end();
+
+}
+
+
+​
