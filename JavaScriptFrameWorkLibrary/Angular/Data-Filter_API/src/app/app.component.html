@@ -1,0 +1,35 @@
+<h1>Data Filter Api</h1>
+
+<div class="container">
+    <select [(ngModel)]='AlbumSelected' (ngModelChange)="onAlbumSelected($event)">
+        <option *ngFor="let item of listAlbums" [value]="item.id">
+            {{item.title}}
+        </option>
+    </select>
+
+</div>
+The Selected Album id is :: {{AlbumSelected}}
+
+<br>
+<br>
+<h2>Get PHOTOS for Album (using Parameters) (urls)</h2>
+<table class="container">
+    <tr>
+        <th>Id</th>
+        <th>AlbumId</th>
+        <th>Title</th>
+        <th>Size</th>
+        <th>ThumbNail</th>
+
+    </tr>
+    <tr *ngFor="let photo of listPhotos">
+        <td>{{photo.id}}</td>
+        <td>{{photo.albumId}}</td>
+        <td>{{photo.title}}</td>
+        <td><img src="{{photo.url}}" alt="img"></td>
+        <td><img src="{{photo.thumnailurl}}" alt="img"></td>
+
+
+    </tr>
+
+</table>
