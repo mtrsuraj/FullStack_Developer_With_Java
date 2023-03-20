@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="px-2 py-2 bg-purple-900 text-white">
+        <ul  class="flex mx-2  my-2">
+            <li class="px-2  cursor-pointer font-serif">HOME</li>
+            <li class="px-2 cursor-pointer font-serif">ABOUT</li>
+            <li class="px-2 cursor-pointer font-serif">CONTACT</li>
+        </ul>
+    </nav>
+    <table class="table-cell">
+        <tr id="element" data="valid">
+            <td class="list-item">first</td>
+            <td class="list-item">second</td>
+         </tr>
+        
+        <tr>
+            <td class="list-item">third</td>
+            <td class="list-item">fourth</td>
+        </tr>
+    </table>
+    <div class="allDivs">first div</div>
+    <!-- <script>
+        const allDivs = document.querySelectorAll(".allDivs");
+        
+        // console.log(allDivs);
+    </script> -->
+    <div class="allDivs">second div</div>
+    <script>
+        //root node
+        // console.log(document.documentElement);
+        // console.log(document.head);
+        // console.log(document.body);
+        //childNode
+        // console.log(document.body.childNodes);
+        // for(node of document.body.childNodes){
+        //     console.log(node);
+        // }
+        // console.log(document.body.children);
+        // console.log(document.body.firstChild);
+        // console.log(document.body.lastChild);
+    //    const childofBody = Array.from(document.body.childNodes);
+    //    console.log(childofBody);
+    //siblings
+    // const ulTag = document.body.children[0];
+    // console.log(ulTag.nextSibling);
+    // console.log(ulTag.lastChild);
+    // console.log(ulTag.nextElementSibling);
+    // console.log(document.body.children[0].children[0].children[2].textContent);
+    //table dom manipulations
+            // const tableTag = document.body.children[1];
+            // console.log(tableTag.tBodies[0].rows[1].cells[1].textContent);
+            // console.log(tableTag.rows[0].textContent);
+            // console.log(tableTag.tBodies[0].rows[1].cells[1].style="background-color:blue;");
+            //ID Search
+            // element.style.backgroundColor="red"
+            // console.log()
+            // const ulTag = document.getElementById('element');
+            // console.log(ulTag.style.backgroundColor="red");
+            // const listTag = document.getElementsByClassName("list-item");
+            // for(xyz of listTag){
+            //     console.log(xyz.textContent="man");
+
+            // }
+            //TagName
+            // const listTag = document.getElementsByTagName("td");
+            // console.log(listTag[2].textContent="man");
+            //querySelector
+            // const listTag = document.querySelector("ul > li:nth-child(3)");
+            // console.log(listTag.textContent);
+            // const listTags = document.querySelectorAll(".list-item");
+            // console.log(listTags);
+            // console.log(allDivs);
+            //Attribute
+            // console.log(element.getAttribute('data'));
+            console.log(element.setAtributes('order-place','pending'));
+            console.log(element.hashAttribute('order-place'));
+
+
+    </script>
+    
+</body>
+
+</html>
